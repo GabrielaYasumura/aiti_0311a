@@ -1,0 +1,6 @@
+import pytest
+
+@pytest.fixture(scope="soma_dobro")
+def fixture_soma_dobro(numeros):
+    return sum(x * 2 for x in numeros)
+
